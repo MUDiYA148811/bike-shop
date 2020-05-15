@@ -19,3 +19,14 @@ $(document).ready(function(){
 	});
 });
 
+var burger = document.querySelector('.burger');
+
+burger.onclick = function() {
+  let burgerMenu = document.querySelector(".burger__menu");
+  let body = document.querySelector("body");
+  burgerMenu.classList.toggle("burger__menu-open");
+  
+  burger.classList.toggle("burger__open");
+
+  body.classList.toggle("lock");
+}
